@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+</head>
+<body>
+    <link rel="stylesheet" href="styles.css">
+        <form>
+        <h1 style="color:crimson;">Payment Form</h1>
+        <hr>
+        <hr>
+        <h5><i>***Note: Fields marked with asterik(*) are mandatory to fill.***</i></h5>
+        <hr>
+        <hr>
+        <h2>Contact Information</h2>
+        <hr>
+        <p><b>Name:*</b><input type="text"  name="name" id="name" required></p>
+        <fieldset>
+            <legend><b>Gender:*</b></legend reuired>
+            <p>Male<input type="radio" name="gender" id="male"></p>
+            <p>Female<input type="radio" name="gender" id="female"></p>
+            <p>Others<input type="radio" name="gender" id="others"></p>
+        </fieldset>
+        <p><b>Contact No.:</b><input type="number" name="contact_no." id="contact_no."></p>
+        <p><b>Email Address:*</b><input type="email" name="email" id="email" required></p>
+        <p><b>Address:</b><textarea name="address" id="address" cols="40" rows="8"></textarea></p>
+        <p><b>Pincode:</b><input type="number" name="number" id="number"></p>
+        <hr>
+        <hr>
+        <h2>Payment Details</h2>
+        <hr>
+        <p><b>Card Type:*</b> 
+            <select name="card_type" id="card_type" required>
+                <option value="">---Select the type of card---</option>
+                <option value="visa">Visa</option>
+                <option value="mastercard">MasterCard</option>
+                <option value="debitcard">Debit Card</option>
+                <option value="creditcard">Credit Card</option>
+            </select>
+        </p>
+        <p><b>Name on Card:*</b><input type="text" name="c_name" id="c_name" required></p>
+        <p><b>Card Number:*</b><input type="number" name="c_number" id="c_number" required></p>
+        <p><b>Expiration Date:*</b><input type="date" name="exp_date" id="exp_date" required></p>
+        <p><b>CVV:*</b><input type="password" name="cvv" id="cvv" required></p>
+        <hr>
+        <hr>
+        <input style="color:crimson" type="submit" value="Pay Now">
+    </form>
+</body>
+</html>
